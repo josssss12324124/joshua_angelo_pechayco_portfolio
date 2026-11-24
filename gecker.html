@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="GECKER — AI-Driven Examination Checker — project case study by Joshua Angelo Pechayco."
+    />
+    <meta name="theme-color" content="#090d18" />
+    <title>
+      GECKER — AI-Driven Examination Checker | Joshua Angelo Pechayco
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-one"></div>
+    <header class="site-header">
+      <nav class="nav-wrap container">
+        <a class="brand" href="../index.html">JAP<span>.</span></a
+        ><button
+          class="menu-toggle"
+          aria-label="Open navigation"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links">
+          <a href="../index.html#about">About</a
+          ><a href="../index.html#projects">Projects</a
+          ><a href="../index.html#experience">Experience</a
+          ><a href="../index.html#skills">Skills</a
+          ><a href="../certificates.html">Awards & Certificates</a
+          ><a class="nav-cta" href="../resume.pdf" download>Download CV ↗</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="page-hero container reveal">
+        <a class="back-link" href="../index.html#projects"
+          >← Back to all projects</a
+        >
+        <p class="eyebrow">Research Project</p>
+        <h1>GECKER — AI-Driven Examination Checker</h1>
+        <p class="project-role">
+            <strong>My Role:</strong> Assistant Leader | Researcher | Backend Developer
+        </p>
+        <p class="lead">
+          An examination-checking system designed to assist educators by
+          scanning answer sheets, detecting marked responses, evaluating
+          answers, and displaying computed results.
+        </p>
+        <div class="meta-row">
+          <span>Python</span><span>OpenCV</span><span>Image Processing</span
+          ><span>Automated Checking</span>
+        </div>
+      </section>
+      <div class="container case-layout">
+        <div class="case-main reveal">
+          <section class="case-block">
+            <h2>Project preview</h2>
+            <div class="project-gallery" data-gallery>
+              <div class="gallery-viewport">
+                <img
+                  class="gallery-slide"
+                  src="../assets/images/gecker.png"
+                  alt="GECKER examination checker interface"
+                />
+                <img
+                  class="gallery-slide"
+                  src="../assets/images/gec2.jpg"
+                  alt="GECKER Answer Sheet Processing"
+                />
+              </div>
+
+              <div class="gallery-controls">
+                <button type="button" class="gallery-prev" aria-label="Previous slide">←</button>
+                <span class="gallery-count" aria-live="polite"></span>
+                <button type="button" class="gallery-next" aria-label="Next slide">→</button>
+              </div>
+
+            </div>
+          </section>
+          <section class="case-block">
+            <h2>Overview</h2>
+            <p>
+              GECKER (General Education Curriculum Examination Checker) is an AI-powered web application designed to help instructors automate the checking of major examinations. It processes student answer sheets, detects marked answers, and automatically calculates scores to make examination checking faster and more efficient.
+            </p>
+          </section>
+          <section class="case-block">
+            <h2>Problem and solution</h2>
+            <p>
+              Manual examination checking is time-consuming and repetitive. GECKER addresses this by automating answer detection and score calculation, reducing instructors' workload and improving checking efficiency.
+            </p>
+          </section>
+          <section class="case-block">
+            <h2>Processing workflow</h2>
+            <ul>
+              <li>Prepare Answer Key: Create or upload an examination answer key.</li>
+              <li>Upload Answer Sheet: Submit a student's answer sheet for processing.</li>
+              <li>
+                Detect Answers: Analyze shaded responses using image processing and machine learning
+              </li>
+              <li>Compare detected responses with the answer key.</li>
+              <li>Generate Results: Automatically calculate and display examination scores.</li>
+            </ul>
+          </section>
+
+          <section class="case-block">
+            <h2>High-level architecture</h2>
+            <div class="architecture">
+              <div class="arch-node">
+                <strong>Input</strong><small>Answer-sheet image</small>
+              </div>
+              <div class="arch-arrow">↓</div>
+              <div class="arch-node">
+                <strong>Image processing</strong
+                ><small>OpenCV · image preparation and detection</small>
+              </div>
+              <div class="arch-arrow">↓</div>
+              <div class="arch-node">
+                <strong>Evaluation</strong
+                ><small>Detected answers compared with answer key</small>
+              </div>
+              <div class="arch-arrow">↓</div>
+              <div class="arch-node">
+                <strong>Output</strong
+                ><small>Computed score and result display</small>
+              </div>
+            </div>
+            <p class="small-note">
+              This is a simplified conceptual view for portfolio communication.
+              Confirm that it matches the final implementation before
+              publishing.
+            </p>
+          </section>
+          <section class="case-block">
+            <h2>System areas / modules</h2>
+            <div class="module-grid">
+              <div class="module">Answer Key Management</div>
+              <div class="module">Answer Sheet Processing</div>
+              <div class="module">Automated Answer Detection</div>
+              <div class="module">Examination Evaluation</div>
+              <div class="module">Score calculation</div>
+              <div class="module">Results Management</div>
+            </div>
+          </section>
+          <section class="case-block">
+            <h2>What I learned</h2>
+            <p>
+              Developed practical experience in web application development, image processing, and AI integration while applying technology to improve an existing examination workflow.
+            </p>
+          </section>
+        </div>
+        <aside class="case-aside reveal">
+          <section class="case-block">
+            <h2>My contribution</h2>
+            <ul>
+              <li>
+                Developed backend components and supported the implementation
+                of the GECKER AI-Driven General Courses Major Examination Checker.
+              </li>
+              <li>
+                Conducted technical research and prepared system documentation
+                covering system architecture, workflows, and technical specifications.
+              </li>
+              <li>
+                Collaborated on integrating the backend processes with the
+                OpenCV-based image processing and automated examination checking system.
+              </li>
+            </ul>
+            <h2 style="margin-top: 25px">Technology</h2>
+            <div class="tag-list">
+              <span>Python</span><span>OpenCV</span><span>Image Processing</span
+              ><span>Automated Checking</span>
+            </div>
+          </section>
+        </aside>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="brand" href="../index.html">JAP<span>.</span></a>
+        <p>© 2026 Joshua Angelo Pechayco</p>
+        <a href="../index.html#projects">All projects ↑</a>
+      </div>
+    </footer>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>
