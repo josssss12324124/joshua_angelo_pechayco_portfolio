@@ -1,1082 +1,418 @@
 <!doctype html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Joshua Angelo Pechayco | Software & Automation Developer</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta
+      name="description"
+      content="Joshua Angelo Pechayco — Web Developer focused on full-stack development, business systems, and automation."
+    />
+    <meta name="theme-color" content="#090d18" />
+    <meta
+      property="og:title"
+      content="Joshua Angelo Pechayco | Web Developer"
+    />
+    <meta
+      property="og:description"
+      content="Full-stack development, business systems, and automation projects."
+    />
+    <title>Joshua Angelo Pechayco | Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              brand: "#2563eb",
-              brandDark: "#1e40af",
-              dark: "#0a0a0a",
-              card: "#111111",
-            },
-          },
-        },
-      };
-    </script>
-    <style>
-      .no-scrollbar::-webkit-scrollbar {
-        display: none;
-      }
-      .reveal {
-        opacity: 0;
-        transform: translateY(30px);
-        transition: all 0.8s ease-out;
-      }
-      .reveal.active {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
-  <body
-    class="bg-dark text-slate-300 antialiased selection:bg-brand selection:text-white font-['Inter']"
-  >
-    <div
-      class="fixed inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/20 via-dark to-dark"
-    ></div>
-
-    <!-- Navigation -->
-    <nav
-      class="fixed top-0 w-full z-50 border-b border-white/5 bg-dark/90 backdrop-blur-md"
-    >
-      <div
-        class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between"
-      >
-        <a
-          href="#"
-          class="text-sm font-bold tracking-tighter text-white uppercase font-mono tracking-widest"
-          >JOSHUA ANGELO<span class="text-brand font-extrabold ml-1"
-            >Pechayco</span
-          ></a
+  <body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+    <header class="site-header">
+      <nav class="nav-wrap container">
+        <a class="brand" href="index.html">Joshua Angelo<span>.</span></a>
+        <button
+          class="menu-toggle"
+          aria-label="Open navigation"
+          aria-expanded="false"
         >
-        <div
-          class="hidden md:flex items-center space-x-8 text-[11px] font-bold uppercase tracking-[0.2em]"
-        >
-          <a href="#about" class="hover:text-brand transition-colors"
-            >Profile</a
-          >
-          <a href="#projects" class="hover:text-brand transition-colors"
-            >Projects</a
-          >
-          <a href="#experience" class="hover:text-brand transition-colors"
-            >Experience</a
-          >
-          <a href="#skills" class="hover:text-brand transition-colors"
-            >Skills</a
-          >
-          <a
-            href="resume.pdf"
-            download
-            class="px-5 py-2 border border-brand text-brand rounded-md hover:bg-brand hover:text-white transition-all text-[10px]"
-            >Download CV</a
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links">
+          <a href="#about">About</a><a href="#projects">Projects</a
+          ><a href="#experience">Experience</a> <a href="#skills">Skills</a
+          ><a href="certificates.html">Awards & Certificates</a>
+          <a class="nav-cta" href="resume.pdf" download
+            >Download CV <span>↗</span></a
           >
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
 
-    <main class="max-w-6xl mx-auto px-6 pt-32 pb-20">
-      <!-- Hero Section -->
-      <section class="grid lg:grid-cols-12 gap-12 items-center mb-40 pt-10">
-        <div class="lg:col-span-7 reveal active">
-          <div
-            class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand/5 border border-brand/20 text-brand text-[10px] font-bold mb-8 tracking-[0.2em]"
-          >
-            <span class="relative flex h-2 w-2">
-              <span
-                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand opacity-75"
-              ></span>
-              <span
-                class="relative inline-flex rounded-full h-2 w-2 bg-brand"
-              ></span>
-            </span>
-            READY TO BUILD IMPACTFUL SOFTWARE
-          </div>
-
-          <h1
-            class="text-5xl md:text-6xl font-black text-white leading-[0.9] mb-8 tracking-tighter"
-          >
-            Joshua Angelo Pechayco <br />
-            <span
-              class="text-transparent bg-clip-text bg-gradient-to-r from-[#818cf8] via-[#2563eb] to-[#10b981]"
-            >
-              Web Developer
-            </span>
+    <main>
+      <section class="hero container" id="about">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">
+            <span class="status-dot"></span> OPEN TO WEB DEVELOPMENT
+            OPPORTUNITIES
+          </p>
+          <p class="hero-kicker">Hello, I'm</p>
+          <h1 class="hero-name">
+            <span class="name-first">Joshua Angelo</span>
+            <span class="gradient-text name-last">Pechayco.</span>
           </h1>
 
-          <p
-            class="text-lg text-slate-400 max-w-xl mb-10 leading-relaxed font-light"
-          >
-            <span class="text-white font-medium"
-              >I turn complex problems into simple solutions.</span
-            >
-            An IT graduate with hands-on experience in full-stack development,
-            ERP systems, and automation, driven by a passion for creating
-            technology that makes work smarter and more efficient.
+          <h2 class="hero-role">
+            <span id="typing-role"></span><span class="typing-cursor">|</span>
+          </h2>
+          <p class="hero-description">
+            I turn complex problems into practical software solutions. An
+            Information Technology graduate with hands-on experience in
+            full-stack development, ERP systems, and automation—focused on
+            building useful applications that make workflows smarter and more
+            efficient.
           </p>
-
-          <div class="flex flex-wrap gap-5 items-center">
+          <div class="hero-actions">
             <a
+              class="button button-primary"
               href="mailto:pechaycojoshuaangeloo@gmail.com"
-              class="group relative px-8 py-4 bg-brand text-white font-bold rounded-xl overflow-hidden transition-all hover:scale-105 active:scale-95 text-xs uppercase tracking-widest"
+              >Let's talk <span>↗</span></a
             >
-              <span class="relative">Send Email</span>
-            </a>
-
-            <div class="flex gap-4">
-              <a
-                href="https://github.com/josssss12324124"
-                target="_blank"
-                class="p-4 bg-white/5 text-white rounded-xl border border-white/10 hover:border-brand/50 transition-all"
-              >
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path
-                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
-                  />
-                </svg>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/joshua-angelo-pechayco-892b9339a"
-                target="_blank"
-                class="p-4 bg-white/5 text-white rounded-xl border border-white/10 hover:border-brand/50 transition-all"
-              >
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path
-                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
-                  />
-                </svg>
-              </a>
-            </div>
+            <a class="button button-ghost" href="#projects"
+              >Explore projects <span>↓</span></a
+            >
+          </div>
+          <div class="social-links">
+            <a
+              href="https://github.com/josssss12324124"
+              target="_blank"
+              rel="noopener"
+              >GitHub ↗</a
+            >
+            <a
+              href="https://www.linkedin.com/in/joshua-angelo-pechayco-892b9339a"
+              target="_blank"
+              rel="noopener"
+              >LinkedIn ↗</a
+            >
+            <a href="mailto:pechaycojoshuaangeloo@gmail.com">Email ↗</a>
           </div>
         </div>
-
-        <div class="lg:col-span-5 reveal active relative">
-          <div class="relative w-full max-w-[5 q20px] mx-auto">
-            <div
-              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-brand/20 rounded-full blur-[80px] -z-10"
-            ></div>
+        <div class="hero-visual reveal">
+          <div class="portrait-frame">
+            <div class="portrait-glow"></div>
             <img
-              src="pp.png"
-              alt="Joshua Pechayco"
-              class="w-full h-auto drop-shadow-[0_20px_50px_rgba(37,99,235,0.3)]"
+              src="assets/images/pp.png"
+              alt="Portrait of Joshua Angelo Pechayco"
+              class="portrait"
+              onerror="
+                this.style.display = 'none';
+                this.nextElementSibling.style.display = 'grid';
+              "
             />
+            <div class="portrait-fallback">JAP<span>.</span></div>
+            <div class="floating-chip chip-top">
+              <span class="chip-dot"></span> Software Development
+            </div>
+            <div class="floating-chip chip-bottom">Laravel · Vue.js · PHP</div>
           </div>
         </div>
       </section>
 
-      <!-- Projects Section (5 Projects) -->
-      <section id="projects" class="mb-40">
-        <h6
-          class="text-brand text-[10px] font-bold uppercase tracking-[0.3em] mb-3"
-        >
-          Case Studies
-        </h6>
-        <h2
-          class="text-4xl font-black text-white uppercase tracking-tighter mb-12"
-        >
-          Featured Projects<span class="text-brand">.</span>
-        </h2>
-
-        <div class="grid md:grid-cols-2 gap-10">
-          <!-- Project 1: MECS ERP -->
-          <div
-            class="reveal group flex flex-col bg-card rounded-[2rem] border border-white/5 overflow-hidden hover:border-brand/50 transition-all duration-500"
-          >
-            <div
-              class="relative p-6 px-10 pt-10 flex gap-4 overflow-hidden h-64 bg-gradient-to-b from-brand/10 to-transparent"
-            >
-              <div
-                class="relative w-1/2 h-full group-hover:-translate-y-2 transition-transform duration-500"
-              >
-                <img
-                  src="mecs1.png"
-                  alt="MECS 1"
-                  class="w-full h-full object-contain drop-shadow-2xl"
-                />
-              </div>
-              <div
-                class="relative w-1/2 h-full group-hover:-translate-y-4 transition-transform duration-500 delay-75"
-              >
-                <img
-                  src="mecs2.png"
-                  alt="MECS 2"
-                  class="w-full h-full object-contain drop-shadow-2xl"
-                />
-              </div>
-            </div>
-            <div class="p-10 pt-4 flex-grow">
-              <span
-                class="text-[10px] font-bold text-brand uppercase tracking-[0.2em] mb-4 block"
-                >Internship Project</span
-              >
-              <h3 class="text-2xl font-bold text-white mb-4">
-                MECS Internal ERP System
-              </h3>
-              <p class="text-slate-400 text-sm mb-6 leading-relaxed">
-                Contributed to building a robust ERP that
-                <strong class="text-white"
-                  >automated CRM, Sales, and Inventory workflows</strong
-                >. Reduced manual data processing by implementing automated
-                stock reconciliation logic.
-              </p>
-              <div class="flex flex-wrap gap-2">
-                <span
-                  class="text-[9px] font-bold px-3 py-1 bg-white/5 border border-white/10 rounded uppercase"
-                  >Laravel</span
-                >
-                <span
-                  class="text-[9px] font-bold px-3 py-1 bg-white/5 border border-white/10 rounded uppercase"
-                  >Vue.js</span
-                >
-                <span
-                  class="text-[9px] font-bold px-3 py-1 bg-white/5 border border-white/10 rounded uppercase"
-                  >MySQL</span
-                >
-              </div>
-            </div>
+      <section class="section container" id="projects">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">SELECTED WORK</p>
+            <h2>Featured Projects<span class="accent">.</span></h2>
           </div>
-
-          <!-- Project 2: IoT Distress Signal -->
-          <div
-            class="reveal group flex flex-col bg-card rounded-[2rem] border border-white/5 overflow-hidden hover:border-brand/50 transition-all duration-500"
+          <a class="text-link" href="projects/mecs-erp.html"
+            >Explore case studies <span>↗</span></a
           >
-            <div
-              class="relative p-6 px-10 pt-10 flex gap-4 overflow-hidden h-64 bg-gradient-to-b from-red-500/10 to-transparent"
-            >
-              <div
-                class="relative w-1/2 h-full group-hover:-translate-y-2 transition-transform duration-500"
-              >
-                <img
-                  src="iot.jpg"
-                  alt="IoT UI"
-                  class="w-full h-full object-contain drop-shadow-2xl"
-                />
-              </div>
-              <div
-                class="relative w-1/2 h-full group-hover:-translate-y-4 transition-transform duration-500 delay-75"
-              >
-                <img
-                  src="iot2.png"
-                  alt="IoT Hardware"
-                  class="w-full h-full object-contain drop-shadow-2xl"
-                />
-              </div>
-            </div>
-            <div class="p-10 pt-4 flex-grow">
-              <span
-                class="text-[10px] font-bold text-brand uppercase tracking-[0.2em] mb-4 block"
-                >Capstone Project</span
-              >
-              <h3 class="text-2xl font-bold text-white mb-4">
-                IoT Based Smart Distress Signal
-              </h3>
-              <p class="text-slate-400 text-sm mb-6 leading-relaxed">
-                Developed a high-speed emergency alert system.
-                <strong class="text-white">Optimized location tracking</strong>
-                via GPS modules and automated cloud notifications, achieving 80%
-                faster response times.
+        </div>
+        <div class="project-grid">
+          <article class="project-card project-featured reveal">
+            <a class="project-image" href="projects/mecs-erp.html">
+              <img
+                src="assets/images/mecs1.png"
+                alt="MECS ERP interface screenshot"
+                loading="lazy"
+              />
+              <span class="image-label">01 / INDUSTRY EXPERIENCE</span>
+            </a>
+            <div class="project-content">
+              <p class="project-type">INTERNSHIP · FULL-STACK DEVELOPMENT</p>
+              <h3>MECS Internal ERP System</h3>
+              <p>
+                Collaborative development of an enterprise resource planning
+                system supporting business workflows across Sales, CRM,
+                Inventory, and related operations.
               </p>
-              <div class="flex flex-wrap gap-2">
-                <span
-                  class="text-[9px] font-bold px-3 py-1 bg-white/5 border border-white/10 rounded uppercase"
-                  >Node.js</span
-                >
-                <span
-                  class="text-[9px] font-bold px-3 py-1 bg-white/5 border border-white/10 rounded uppercase"
-                  >Firebase</span
-                >
-                <span
-                  class="text-[9px] font-bold px-3 py-1 bg-white/5 border border-white/10 rounded uppercase"
-                  >C++</span
-                >
+              <div class="tag-list">
+                <span>Laravel</span><span>Vue.js</span><span>Inertia.js</span
+                ><span>MySQL / MariaDB</span>
               </div>
+              <a class="text-link" href="projects/mecs-erp.html"
+                >View case study <span>↗</span></a
+              >
             </div>
-          </div>
-
-          <!-- Project 3: GECKER Exam Checker -->
-          <div
-            class="reveal group flex flex-col bg-card rounded-[2rem] border border-white/5 overflow-hidden hover:border-brand/50 transition-all duration-500"
-          >
-            <div
-              class="relative p-6 px-10 pt-10 flex gap-4 overflow-hidden h-64 bg-gradient-to-b from-blue-500/10 to-transparent"
-            >
-              <div
-                class="relative w-1/2 h-full group-hover:scale-105 transition-transform duration-500"
-              >
-                <img
-                  src="gecker.png"
-                  alt="Gecker 1"
-                  class="w-full h-full object-contain drop-shadow-2xl"
-                />
-              </div>
-              <div
-                class="relative w-1/2 h-full group-hover:scale-110 transition-transform duration-500 delay-75"
-              >
-                <img
-                  src="gec2.jpg"
-                  alt="Gecker 2"
-                  class="w-full h-full object-contain drop-shadow-2xl"
-                />
-              </div>
-            </div>
-            <div class="p-10 pt-4 flex-grow">
-              <span
-                class="text-[10px] font-bold text-brand uppercase tracking-[0.2em] mb-4 block"
-                >AI Integration</span
-              >
-              <h3 class="text-2xl font-bold text-white mb-4">
-                GECKER Exam Checker
-              </h3>
-              <p class="text-slate-400 text-sm mb-6 leading-relaxed">
-                An
-                <strong class="text-white">automation tool for educators</strong
-                >. Designed image processing logic to scan and check exam
-                results instantly, reducing manual checking time by over 80%.
+          </article>
+          <article class="project-card reveal">
+            <a class="project-image" href="projects/gecker.html">
+              <img
+                src="assets/images/gecker.png"
+                alt="GECKER examination checker screenshot"
+                loading="lazy"
+              />
+              <span class="image-label">02 / AI & AUTOMATION</span>
+            </a>
+            <div class="project-content">
+              <p class="project-type">System Integration and Architecture 2 (SIA102) Project</p>
+              <h3>GECKER — AI-Driven Examination Checker</h3>
+              <p>
+                An examination checking system using OpenCV and image processing
+                to scan answer sheets, identify responses, calculate scores, and
+                present results.
               </p>
-              <div class="flex flex-wrap gap-2">
-                <span
-                  class="text-[9px] font-bold px-3 py-1 bg-white/5 border border-white/10 rounded uppercase"
-                  >Python</span
-                >
-                <span
-                  class="text-[9px] font-bold px-3 py-1 bg-white/5 border border-white/10 rounded uppercase"
-                  >Flask</span
-                >
-                <span
-                  class="text-[9px] font-bold px-3 py-1 bg-white/5 border border-white/10 rounded uppercase"
-                  >MySQL</span
-                >
+              <div class="tag-list">
+                <span>Python</span><span>OpenCV</span
+                ><span>Image Processing</span>
               </div>
+              <a class="text-link" href="projects/gecker.html"
+                >View case study <span>↗</span></a
+              >
             </div>
-          </div>
-
-          <!-- Project 4: LearnMate AI -->
-          <div
-            class="reveal group flex flex-col bg-card rounded-[2rem] border border-white/5 overflow-hidden hover:border-brand/50 transition-all duration-500"
-          >
-            <div
-              class="relative p-6 px-10 pt-10 flex gap-4 overflow-hidden h-64 bg-gradient-to-b from-emerald-500/10 to-transparent"
-            >
-              <div
-                class="relative w-1/2 h-full group-hover:-translate-y-2 transition-transform duration-500"
-              >
-                <img
-                  src="learn.png"
-                  alt="Learn 1"
-                  class="w-full h-full object-contain drop-shadow-2xl"
-                />
-              </div>
-              <div
-                class="relative w-1/2 h-full group-hover:-translate-y-2 transition-transform duration-500"
-              >
-                <img
-                  src="learn2.png"
-                  alt="Learn 2"
-                  class="w-full h-full object-contain drop-shadow-2xl"
-                />
-              </div>
-            </div>
-            <div class="p-10 pt-4 flex-grow">
-              <span
-                class="text-[10px] font-bold text-brand uppercase tracking-[0.2em] mb-4 block"
-                >UI/UX Prototyping</span
-              >
-              <h3 class="text-2xl font-bold text-white mb-4">LearnMate AI</h3>
-              <p class="text-slate-400 text-sm mb-6 leading-relaxed">
-                Designed the user experience for an AI student tracker. Focused
-                on
-                <strong class="text-white"
-                  >visualizing academic performance data</strong
-                >
-                through automated dashboards.
+          </article>
+          <article class="project-card reveal">
+            <a class="project-image" href="projects/iot-distress-signal.html">
+              <img
+                src="assets/images/iot.jpg"
+                alt="IoT smart distress signal interface"
+                loading="lazy"
+              />
+              <span class="image-label">03 / IOT SYSTEM</span>
+            </a>
+            <div class="project-content">
+              <p class="project-type">CAPSTONE PROJECT</p>
+              <h3>IoT-Based Smart Distress Signal</h3>
+              <p>
+                An emergency alert concept combining an ESP32-based device, GPS
+                location data, and a web monitoring interface to help
+                communicate distress alerts.
               </p>
-              <div class="flex flex-wrap gap-2">
-                <span
-                  class="text-[9px] font-bold px-3 py-1 bg-white/5 border border-white/10 rounded uppercase"
-                  >Figma</span
-                >
-                <span
-                  class="text-[9px] font-bold px-3 py-1 bg-white/5 border border-white/10 rounded uppercase"
-                  >UI/UX</span
-                >
+              <div class="tag-list">
+                <span>ESP32</span><span>Firebase</span><span>Node.js</span
+                ><span>GPS</span>
               </div>
+              <a class="text-link" href="projects/iot-distress-signal.html"
+                >View case study <span>↗</span></a
+              >
             </div>
-          </div>
-
-          <!-- Project 5: MindMate AI -->
-          <div
-            class="reveal group flex flex-col bg-card rounded-[2rem] border border-white/5 overflow-hidden hover:border-brand/50 transition-all duration-500 md:col-span-2 max-w-2xl mx-auto w-full"
-          >
-            <div
-              class="relative p-6 px-10 pt-10 flex gap-4 overflow-hidden h-64 bg-gradient-to-b from-purple-500/10 to-transparent"
-            >
-              <div
-                class="relative w-1/2 h-full group-hover:scale-105 transition-transform duration-500"
-              >
-                <img
-                  src="mind.png"
-                  alt="Mind 1"
-                  class="w-full h-full object-contain drop-shadow-2xl"
-                />
-              </div>
-              <div
-                class="relative w-1/2 h-full group-hover:scale-105 transition-transform duration-500"
-              >
-                <img
-                  src="mind2.png"
-                  alt="Mind 2"
-                  class="w-full h-full object-contain drop-shadow-2xl"
-                />
-              </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-image">
+              <img
+                src="assets/images/learn.png"
+                alt="LearnMate AI interface screenshot"
+                loading="lazy"
+              />
+              <span class="image-label">04 / UI & UX</span>
             </div>
-            <div class="p-10 pt-4 flex-grow">
-              <span
-                class="text-[10px] font-bold text-brand uppercase tracking-[0.2em] mb-4 block"
-                >Front-End Development</span
-              >
-              <h3 class="text-2xl font-bold text-white mb-4 text-center">
-                MindMate AI: Wellness Navigator
-              </h3>
-              <p
-                class="text-slate-400 text-sm mb-6 leading-relaxed text-center"
-              >
-                A mental wellness system built with
-                <strong class="text-white">AI Decision Trees</strong>. Automated
-                the triage of emotional states to provide appropriate self-care
-                resources.
+            <div class="project-content">
+              <p class="project-type">ACADEMIC PROJECT</p>
+              <h3>LearnMate AI</h3>
+              <p>
+                An academic performance and student-tracking concept focused on
+                presenting learning information through a clear dashboard
+                experience.
               </p>
-              <div class="flex flex-wrap justify-center gap-2">
-                <span
-                  class="text-[9px] font-bold px-3 py-1 bg-white/5 border border-white/10 rounded uppercase"
-                  >JavaScript</span
-                >
-                <span
-                  class="text-[9px] font-bold px-3 py-1 bg-white/5 border border-white/10 rounded uppercase"
-                  >Bootstrap</span
-                >
-                <span
-                  class="text-[9px] font-bold px-3 py-1 bg-white/5 border border-white/10 rounded uppercase"
-                  >AI Logic</span
-                >
-              </div>
+              <div class="tag-list"><span>Figma</span><span>UI/UX</span></div>
+              <p class="project-note">
+                See project materials for the exact scope and implementation
+                status.
+              </p>
             </div>
-          </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-image">
+              <img
+                src="assets/images/mind.png"
+                alt="MindMate AI interface screenshot"
+                loading="lazy"
+              />
+              <span class="image-label">05 / WEB APPLICATION</span>
+            </div>
+            <div class="project-content">
+              <p class="project-type">ACADEMIC PROJECT</p>
+              <h3>MindMate AI: Wellness Navigator</h3>
+              <p>
+                A wellness-oriented web application concept using decision-based
+                logic to guide users toward relevant self-care resources.
+              </p>
+              <div class="tag-list">
+                <span>JavaScript</span><span>Bootstrap</span
+                ><span>Decision Logic</span>
+              </div>
+              <p class="project-note">
+                See project materials for the exact scope and implementation
+                status.
+              </p>
+            </div>
+          </article>
         </div>
       </section>
 
-      <!-- Experience Section -->
-      <section id="experience" class="mb-40 reveal">
-        <h6
-          class="text-brand text-[10px] font-bold uppercase tracking-[0.3em] mb-3"
-        >
-          Work History
-        </h6>
-        <h2
-          class="text-4xl font-black text-white uppercase tracking-tighter mb-12"
-        >
-          Professional Experience<span class="text-brand">.</span>
-        </h2>
-        <div
-          class="bg-card p-8 rounded-2xl border border-white/5 border-l-4 border-l-brand"
-        >
-          <div class="flex flex-col md:flex-row justify-between mb-6">
+      <section class="section container" id="experience">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">WHERE I'VE CONTRIBUTED</p>
+            <h2>Experience<span class="accent">.</span></h2>
+          </div>
+        </div>
+        <div class="experience-card reveal">
+          <div class="experience-top">
             <div>
-              <h3 class="text-xl font-bold text-white">
-                Full-Stack Developer (Internship) · 500 Hours
-              </h3>
-              <p class="text-emerald-400 font-bold text-sm mt-1 uppercase">
-                MECS Software Solutions Incorporated
+              <p class="project-type">FEBRUARY – MAY 2026 · 500 HOURS</p>
+              <h3>Full-Stack Developer Intern</h3>
+              <p class="company">
+                MECS Software Solutions Incorporated · Iloilo City
               </p>
             </div>
-            <span
-              class="text-[10px] text-slate-500 font-bold uppercase tracking-widest pt-2 md:pt-0"
-              >Feb 2026 - May 2026</span
-            >
+            <span class="experience-mark">MECS</span>
           </div>
-          <ul class="space-y-4 text-sm text-slate-400">
-            <li class="flex gap-3">
-              <span class="text-brand">▹</span>
-              <span
-                ><strong class="text-white"
-                  >Built CRM & Inventory modules</strong
-                >
-                using Laravel and Vue.js, reducing manual stock entry
-                time.</span
-              >
+          <ul class="detail-list">
+            <li>
+              Contributed to the development of an internal ERP system with
+              modules and workflows related to Sales, CRM, Inventory,
+              Purchasing, and business operations.
             </li>
-            <li class="flex gap-3">
-              <span class="text-brand">▹</span>
-              <span
-                ><strong class="text-white">Developed REST APIs</strong> for
-                seamless communication between Purchasing and Sales
-                departments.</span
-              >
+            <li>
+              Worked with Laravel, Vue.js, Inertia.js, PrimeVue, Tailwind CSS,
+              and MySQL/MariaDB in a collaborative development environment.
             </li>
-            <li class="flex gap-3">
-              <span class="text-brand">▹</span>
-              <span
-                ><strong class="text-white">Optimized SQL queries</strong> for
-                business reporting, resulting in 30% faster report
-                generation.</span
-              >
+            <li>
+              Worked on application features involving CRUD operations, database
+              relationships, validation, business logic, and interface
+              implementation.
             </li>
-            <li class="flex gap-3">
-              <span class="text-brand">▹</span>
-              <span
-                >Implemented strict server-side validation and business logic to
-                prevent data inconsistencies.</span
-              >
+            <li>
+              Used GitHub for collaborative source control and participated in
+              reviewing tasks, understanding workflows, and implementing
+              assigned changes.
             </li>
           </ul>
         </div>
       </section>
 
-      <!-- Categorized Skills Section -->
-      <section id="skills" class="mb-40 reveal">
-        <h6
-          class="text-brand text-[10px] font-bold uppercase tracking-[0.3em] mb-3"
-        >
-          Expertise
-        </h6>
-        <h2
-          class="text-4xl font-black text-white uppercase tracking-tighter mb-12"
-        >
-          Categorized Skills<span class="text-brand">.</span>
-        </h2>
-
-        <div class="grid md:grid-cols-2 gap-12">
-          <!-- Column 1 -->
-          <div class="space-y-10">
-            <div>
-              <h3
-                class="text-xs font-black text-brand uppercase tracking-widest mb-6"
-              >
-                Languages
-              </h3>
-              <div class="space-y-4">
-                <div>
-                  <div
-                    class="flex justify-between text-[10px] font-bold uppercase mb-2"
-                  >
-                    <span>PHP / Python</span><span class="text-brand">95%</span>
-                  </div>
-                  <div class="h-1 bg-white/5 rounded-full overflow-hidden">
-                    <div class="h-full bg-brand w-[95%]"></div>
-                  </div>
-                </div>
-                <div>
-                  <div
-                    class="flex justify-between text-[10px] font-bold uppercase mb-2"
-                  >
-                    <span>JavaScript / SQL</span
-                    ><span class="text-brand">90%</span>
-                  </div>
-                  <div class="h-1 bg-white/5 rounded-full overflow-hidden">
-                    <div class="h-full bg-brand w-[90%]"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <h3
-                class="text-xs font-black text-brand uppercase tracking-widest mb-6"
-              >
-                Frameworks
-              </h3>
-              <div class="space-y-4">
-                <div>
-                  <div
-                    class="flex justify-between text-[10px] font-bold uppercase mb-2"
-                  >
-                    <span>Laravel / Vue.js</span
-                    ><span class="text-brand">92%</span>
-                  </div>
-                  <div class="h-1 bg-white/5 rounded-full overflow-hidden">
-                    <div class="h-full bg-brand w-[92%]"></div>
-                  </div>
-                </div>
-                <div>
-                  <div
-                    class="flex justify-between text-[10px] font-bold uppercase mb-2"
-                  >
-                    <span>Tailwind / Inertia.js</span
-                    ><span class="text-brand">95%</span>
-                  </div>
-                  <div class="h-1 bg-white/5 rounded-full overflow-hidden">
-                    <div class="h-full bg-brand w-[95%]"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
+      <section class="section container" id="skills">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">TOOLS OF THE TRADE</p>
+            <h2>Technical Skills<span class="accent">.</span></h2>
           </div>
-
-          <!-- Column 2 -->
-          <div class="space-y-10">
-            <div>
-              <h3
-                class="text-xs font-black text-emerald-400 uppercase tracking-widest mb-6"
-              >
-                Automation & Database
-              </h3>
-              <div class="space-y-4">
-                <div>
-                  <div
-                    class="flex justify-between text-[10px] font-bold uppercase mb-2"
-                  >
-                    <span>Task Automation / Scripting</span
-                    ><span class="text-emerald-400">90%</span>
-                  </div>
-                  <div class="h-1 bg-white/5 rounded-full overflow-hidden">
-                    <div class="h-full bg-emerald-400 w-[90%]"></div>
-                  </div>
-                </div>
-                <div>
-                  <div
-                    class="flex justify-between text-[10px] font-bold uppercase mb-2"
-                  >
-                    <span>MySQL / Firebase</span
-                    ><span class="text-emerald-400">88%</span>
-                  </div>
-                  <div class="h-1 bg-white/5 rounded-full overflow-hidden">
-                    <div class="h-full bg-emerald-400 w-[88%]"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <h3
-                class="text-xs font-black text-emerald-400 uppercase tracking-widest mb-6"
-              >
-                Tools
-              </h3>
-              <div class="space-y-4">
-                <div>
-                  <div
-                    class="flex justify-between text-[10px] font-bold uppercase mb-2"
-                  >
-                    <span>Git / GitHub / Postman</span
-                    ><span class="text-emerald-400">95%</span>
-                  </div>
-                  <div class="h-1 bg-white/5 rounded-full overflow-hidden">
-                    <div class="h-full bg-emerald-400 w-[95%]"></div>
-                  </div>
-                </div>
-                <div>
-                  <div
-                    class="flex justify-between text-[10px] font-bold uppercase mb-2"
-                  >
-                    <span>VS Code / Figma</span
-                    ><span class="text-emerald-400">90%</span>
-                  </div>
-                  <div class="h-1 bg-white/5 rounded-full overflow-hidden">
-                    <div class="h-full bg-emerald-400 w-[90%]"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-panel reveal">
+            <span class="skill-number">01</span>
+            <h3>Languages</h3>
+            <p>PHP · JavaScript · Python · SQL · HTML · CSS</p>
+          </div>
+          <div class="skill-panel reveal">
+            <span class="skill-number">02</span>
+            <h3>Frameworks & Libraries</h3>
+            <p>
+              Laravel · Vue.js · Inertia.js · Tailwind CSS · Bootstrap · Flask
+            </p>
+          </div>
+          <div class="skill-panel reveal">
+            <span class="skill-number">03</span>
+            <h3>Databases & Backend</h3>
+            <p>
+              MySQL · MariaDB · Firebase Realtime Database · REST API concepts
+            </p>
+          </div>
+          <div class="skill-panel reveal">
+            <span class="skill-number">04</span>
+            <h3>Tools & Practices</h3>
+            <p>
+              Git · GitHub · Postman · VS Code · Figma · Database Design ·
+              Debugging
+            </p>
+          </div>
+          <div class="skill-panel reveal">
+            <span class="skill-number">05</span>
+            <h3>AI & Image Processing</h3>
+            <p>
+              OpenCV · NumPy · pandas · scikit-learn · TensorFlow (academic
+              exposure)
+            </p>
+          </div>
+          <div class="skill-panel reveal">
+            <span class="skill-number">06</span>
+            <h3>Development Practices</h3>
+            <p>
+              Responsive interfaces · CRUD · Validation · Version control · Team
+              collaboration
+            </p>
           </div>
         </div>
       </section>
 
-      <!-- 12 Certificates Slider -->
-      <section id="certificates" class="mb-40 reveal">
-        <h6
-          class="text-brand text-xs font-bold uppercase tracking-[0.3em] mb-3"
-        >
-          Certificates
-        </h6>
-        <h2
-          class="text-4xl font-black text-white uppercase tracking-tighter mb-12"
-        >
-          Seminar & Academic Achievements<span class="text-brand">.</span>
-        </h2>
-
-        <div
-          id="cert-slider"
-          class="flex gap-6 overflow-x-auto no-scrollbar pb-8 snap-x"
-        >
-          <!-- Cert Cards -->
-          <div
-            class="min-w-[300px] flex-none snap-center group bg-card rounded-2xl border border-white/5 p-4 hover:border-brand/30 transition-all cursor-pointer"
-            onclick="openModal('images/award1.jpg')"
-          >
-            <img
-              src="images/award1.jpg"
-              alt="Award 1"
-              class="w-full h-40 object-contain mb-4 rounded-lg"
-            />
-            <h3 class="text-sm font-bold text-white uppercase leading-tight">
-              Dean's Lister 2nd Semester A.Y. 2025-2026
-            </h3>
-            <p class="text-xs text-slate-500 mt-2 uppercase tracking-widest">
-              SAC · 2026
-            </p>
-          </div>
-          <div
-            class="min-w-[300px] flex-none snap-center group bg-card rounded-2xl border border-white/5 p-4 hover:border-brand/30 transition-all cursor-pointer"
-            onclick="openModal('images/award2.jpg')"
-          >
-            <img
-              src="images/award2.jpg"
-              alt="Award 2"
-              class="w-full h-40 object-contain mb-4 rounded-lg"
-            />
-            <h3 class="text-sm font-bold text-white uppercase leading-tight">
-              Dean's Lister 1st Semester A.Y. 2024-2025
-            </h3>
-            <p class="text-xs text-slate-500 mt-2 uppercase tracking-widest">
-              SAC · 2025
-            </p>
-          </div>
-          <div
-            class="min-w-[300px] flex-none snap-center group bg-card rounded-2xl border border-white/5 p-4 hover:border-brand/30 transition-all cursor-pointer"
-            onclick="openModal('images/award3.jpg')"
-          >
-            <img
-              src="images/award3.jpg"
-              alt="Award 3"
-              class="w-full h-40 object-contain mb-4 rounded-lg"
-            />
-            <h3 class="text-sm font-bold text-white uppercase leading-tight">
-              Oustanding Student Intern
-            </h3>
-            <p class="text-xs text-slate-500 mt-2 uppercase tracking-widest">
-              SAC · 2026
-            </p>
-          </div>
-          <div
-            class="min-w-[300px] flex-none snap-center group bg-card rounded-2xl border border-white/5 p-4 hover:border-brand/30 transition-all cursor-pointer"
-            onclick="openModal('images/award4.jpg')"
-          >
-            <img
-              src="images/award4.jpg"
-              alt="Award 3"
-              class="w-full h-40 object-contain mb-4 rounded-lg"
-            />
-            <h3 class="text-sm font-bold text-white uppercase leading-tight">
-              Top Pythonisa Award
-            </h3>
-            <p class="text-xs text-slate-500 mt-2 uppercase tracking-widest">
-              SAC · 2025
-            </p>
-          </div>
-          <div
-            class="min-w-[300px] flex-none snap-center group bg-card rounded-2xl border border-white/5 p-4 hover:border-brand/30 transition-all cursor-pointer"
-            onclick="openModal('images/cert12.png')"
-          >
-            <img
-              src="images/cert12.png"
-              alt="Cert 12"
-              class="w-full h-40 object-contain mb-4 rounded-lg"
-            />
-            <h3 class="text-sm font-bold text-white uppercase leading-tight">
-              Harnessing Python for Data Analysis: Insights into Development and
-              Best Practices
-            </h3>
-            <p class="text-xs text-slate-500 mt-2 uppercase tracking-widest">
-              WVSU · 2024
-            </p>
-          </div>
-
-          <div
-            class="min-w-[300px] flex-none snap-center group bg-card rounded-2xl border border-white/5 p-4 hover:border-brand/30 transition-all cursor-pointer"
-            onclick="openModal('images/cert1.png')"
-          >
-            <img
-              src="images/cert1.png"
-              alt="Cert 1"
-              class="w-full h-40 object-contain mb-4 rounded-lg"
-            />
-            <h3 class="text-sm font-bold text-white uppercase leading-tight">
-              "Beyond Hello World": Your First Machine Learning Project
-            </h3>
-            <p class="text-xs text-slate-500 mt-2 uppercase tracking-widest">
-              WVSU · 2024
-            </p>
-          </div>
-
-          <div
-            class="min-w-[300px] flex-none snap-center group bg-card rounded-2xl border border-white/5 p-4 hover:border-brand/30 transition-all cursor-pointer"
-            onclick="openModal('images/cert2.jpg')"
-          >
-            <img
-              src="images/cert2.jpg"
-              alt="Cert 2"
-              class="w-full h-40 object-contain mb-4 rounded-lg"
-            />
-            <h3 class="text-sm font-bold text-white uppercase leading-tight">
-              Mock Interview Workshop
-            </h3>
-            <p class="text-xs text-slate-500 mt-2 uppercase tracking-widest">
-              SAC · 2025
-            </p>
-          </div>
-
-          <div
-            class="min-w-[300px] flex-none snap-center group bg-card rounded-2xl border border-white/5 p-4 hover:border-brand/30 transition-all cursor-pointer"
-            onclick="openModal('images/cert3.png')"
-          >
-            <img
-              src="images/cert3.png"
-              alt="Cert 3"
-              class="w-full h-40 object-contain mb-4 rounded-lg"
-            />
-            <h3 class="text-sm font-bold text-white uppercase leading-tight">
-              Fundamental of Cybersecurity Success
-            </h3>
-            <p class="text-xs text-slate-500 mt-2 uppercase tracking-widest">
-              SAC · 2024
-            </p>
-          </div>
-
-          <div
-            class="min-w-[300px] flex-none snap-center group bg-card rounded-2xl border border-white/5 p-4 hover:border-brand/30 transition-all cursor-pointer"
-            onclick="openModal('images/cert4.png')"
-          >
-            <img
-              src="images/cert4.png"
-              alt="Cert 4"
-              class="w-full h-40 object-contain mb-4 rounded-lg"
-            />
-            <h3 class="text-sm font-bold text-white uppercase leading-tight">
-              Emergency First Aid Training
-            </h3>
-            <p class="text-xs text-slate-500 mt-2 uppercase tracking-widest">
-              SAC · 2025
-            </p>
-          </div>
-
-          <div
-            class="min-w-[300px] flex-none snap-center group bg-card rounded-2xl border border-white/5 p-4 hover:border-brand/30 transition-all cursor-pointer"
-            onclick="openModal('images/cert5.png')"
-          >
-            <img
-              src="images/cert5.png"
-              alt="Cert 5"
-              class="w-full h-40 object-contain mb-4 rounded-lg"
-            />
-            <h3 class="text-sm font-bold text-white uppercase leading-tight">
-              Building a Professional IT Portfolio: Showcasing your Skills and
-              Projects
-            </h3>
-            <p class="text-xs text-slate-500 mt-2 uppercase tracking-widest">
-              SAC · 2024
-            </p>
-          </div>
-
-          <div
-            class="min-w-[300px] flex-none snap-center group bg-card rounded-2xl border border-white/5 p-4 hover:border-brand/30 transition-all cursor-pointer"
-            onclick="openModal('images/cert6.png')"
-          >
-            <img
-              src="images/cert6.png"
-              alt="Cert 6"
-              class="w-full h-40 object-contain mb-4 rounded-lg"
-            />
-            <h3 class="text-sm font-bold text-white uppercase leading-tight">
-              Cybersecurity Frontlines: Understand Digital Threats
-            </h3>
-            <p class="text-xs text-slate-500 mt-2 uppercase tracking-widest">
-              SAC · 2025
-            </p>
-          </div>
-
-          <div
-            class="min-w-[300px] flex-none snap-center group bg-card rounded-2xl border border-white/5 p-4 hover:border-brand/30 transition-all cursor-pointer"
-            onclick="openModal('images/cert7.png')"
-          >
-            <img
-              src="images/cert7.png"
-              alt="Cert 7"
-              class="w-full h-40 object-contain mb-4 rounded-lg"
-            />
-            <h3 class="text-sm font-bold text-white uppercase leading-tight">
-              CAREER READINESS WORKSHOP: Crafting Professional Application
-              Letters and Resume
-            </h3>
-            <p class="text-xs text-slate-500 mt-2 uppercase tracking-widest">
-              SAC · 2025
-            </p>
-          </div>
-
-          <div
-            class="min-w-[300px] flex-none snap-center group bg-card rounded-2xl border border-white/5 p-4 hover:border-brand/30 transition-all cursor-pointer"
-            onclick="openModal('images/cert8.png')"
-          >
-            <img
-              src="images/cert8.png"
-              alt="Cert 8"
-              class="w-full h-40 object-contain mb-4 rounded-lg"
-            />
-            <h3 class="text-sm font-bold text-white uppercase leading-tight">
-              Professional and Work Ethics in the Tech Industry
-            </h3>
-            <p class="text-xs text-slate-500 mt-2 uppercase tracking-widest">
-              SAC · 2025
-            </p>
-          </div>
-
-          <div
-            class="min-w-[300px] flex-none snap-center group bg-card rounded-2xl border border-white/5 p-4 hover:border-brand/30 transition-all cursor-pointer"
-            onclick="openModal('images/cert9.png')"
-          >
-            <img
-              src="images/cert9.png"
-              alt="Cert 9"
-              class="w-full h-40 object-contain mb-4 rounded-lg"
-            />
-            <h3 class="text-sm font-bold text-white uppercase leading-tight">
-              Cybersecurity in the Age of Artificial Intelligence
-            </h3>
-            <p class="text-xs text-slate-500 mt-2 uppercase tracking-widest">
-              SAC · 2025
-            </p>
-          </div>
-
-          <div
-            class="min-w-[300px] flex-none snap-center group bg-card rounded-2xl border border-white/5 p-4 hover:border-brand/30 transition-all cursor-pointer"
-            onclick="openModal('images/cert10.png')"
-          >
-            <img
-              src="images/cert10.png"
-              alt="Cert 10"
-              class="w-full h-40 object-contain mb-4 rounded-lg"
-            />
-            <h3 class="text-sm font-bold text-white uppercase leading-tight">
-              Design like a Pro: The Core Principles Behind Great Web Design
-            </h3>
-            <p class="text-xs text-slate-500 mt-2 uppercase tracking-widest">
-              SAC · 2025
-            </p>
-          </div>
-
-          <div
-            class="min-w-[300px] flex-none snap-center group bg-card rounded-2xl border border-white/5 p-4 hover:border-brand/30 transition-all cursor-pointer"
-            onclick="openModal('images/cert11.png')"
-          >
-            <img
-              src="images/cert11.png"
-              alt="Cert 11"
-              class="w-full h-40 object-contain mb-4 rounded-lg"
-            />
-            <h3 class="text-sm font-bold text-white uppercase leading-tight">
-              Capstone Project Presentation Techniques & Documentation Standards
-            </h3>
-            <p class="text-xs text-slate-500 mt-2 uppercase tracking-widest">
-              SAC · 2025
-            </p>
+      <section class="section container" id="education">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">ACADEMIC BACKGROUND</p>
+            <h2>Education & Recognition<span class="accent">.</span></h2>
           </div>
         </div>
-        <div class="flex justify-end gap-2 mt-4">
-          <button
-            onclick="
-              document
-                .getElementById('cert-slider')
-                .scrollBy({ left: -300, behavior: 'smooth' })
-            "
-            class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-brand text-white"
-          >
-            ←
-          </button>
-          <button
-            onclick="
-              document
-                .getElementById('cert-slider')
-                .scrollBy({ left: 300, behavior: 'smooth' })
-            "
-            class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-brand text-white"
-          >
-            →
-          </button>
+        <div class="education-grid">
+          <div class="education-card reveal">
+            <p class="project-type">2026</p>
+            <h3>Bachelor of Science in Information Technology</h3>
+            <p>St. Anthony's College</p>
+            <p class="small-note">San Jose de Buenavista, Antique</p>
+          </div>
+          <div class="education-card reveal">
+            <p class="project-type">SELECTED RECOGNITION</p>
+            <ul class="award-list">
+              <li>
+                <strong>Outstanding Student Intern</strong><span>2026</span>
+              </li>
+              <li><strong>Top Pythonista Award</strong><span>2025</span></li>
+              <li><strong>Dean's List</strong><span>2025–2026</span></li>
+            </ul>
+            <a class="text-link" href="certificates.html"
+              >View awards & certificates <span>↗</span></a
+            >
+          </div>
         </div>
       </section>
 
-      <!-- Final CTA Section -->
-      <section
-        class="py-24 px-10 rounded-[3rem] bg-gradient-to-br from-card to-dark border border-white/5 text-center reveal"
-      >
-        <h2
-          class="text-4xl font-black text-white mb-6 uppercase tracking-tighter italic"
-        >
-          Ready to automate your future?
+      <section class="contact-section container reveal" id="contact">
+        <p class="eyebrow">HAVE A ROLE OR PROJECT IN MIND?</p>
+        <h2>
+          Let's build something<br /><span class="gradient-text"
+            >meaningful.</span
+          >
         </h2>
-        <p class="text-slate-400 mb-10 max-w-xl mx-auto">
-          I'm actively looking for full-time software developer opportunities.
-          Let's talk!
+        <p>
+          I'm interested in opportunities where I can contribute, learn, and
+          grow as a software developer.
         </p>
         <a
+          class="button button-primary"
           href="mailto:pechaycojoshuaangeloo@gmail.com"
-          class="text-xl md:text-3xl font-black text-white hover:text-brand transition-all underline underline-offset-8 decoration-brand italic"
+          >pechaycojoshuaangeloo@gmail.com ↗</a
         >
-          pechaycojoshuaangeloo@gmail.com
-        </a>
       </section>
     </main>
-
-    <footer class="py-10 border-t border-white/5 text-center">
-      <p
-        class="text-[10px] font-bold text-slate-700 tracking-[0.5em] uppercase"
-      >
-        © 2026 Joshua Angelo Pechayco • Antique, Philippines
-      </p>
-    </footer>
-
-    <!-- Modal for Certificates -->
-    <div
-      id="certModal"
-      class="fixed inset-0 z-[100] hidden flex items-center justify-center p-4"
-    >
-      <div
-        onclick="closeModal()"
-        class="absolute inset-0 bg-dark/95 backdrop-blur-md"
-      ></div>
-      <div class="relative max-w-4xl w-full">
-        <img id="modalImg" src="" class="w-full h-auto rounded-lg shadow-2xl" />
-        <button
-          onclick="closeModal()"
-          class="absolute -top-12 right-0 text-white hover:text-brand text-3xl font-bold"
-        >
-          &times;
-        </button>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="brand" href="index.html">JAP<span>.</span></a>
+        <p>© 2026 Joshua Angelo Pechayco · Philippines</p>
+        <a href="#about">Back to top ↑</a>
       </div>
-    </div>
-
-    <script>
-      // Scroll Reveal logic
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) entry.target.classList.add("active");
-          });
-        },
-        { threshold: 0.1 },
-      );
-      document
-        .querySelectorAll(".reveal")
-        .forEach((el) => observer.observe(el));
-
-      // Modal Logic
-      function openModal(imgSrc) {
-        document.getElementById("modalImg").src = imgSrc;
-        document.getElementById("certModal").classList.remove("hidden");
-        document.body.style.overflow = "hidden";
-      }
-      function closeModal() {
-        document.getElementById("certModal").classList.add("hidden");
-        document.body.style.overflow = "auto";
-      }
-      document.addEventListener("keydown", (e) => {
-        if (e.key === "Escape") closeModal();
-      });
-    </script>
+    </footer>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
