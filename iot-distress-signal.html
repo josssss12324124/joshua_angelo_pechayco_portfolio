@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="IoT-Based Smart Distress Signal — project case study by Joshua Angelo Pechayco."
+    />
+    <meta name="theme-color" content="#090d18" />
+    <title>An IoT-Based Smart Distress Signal for Fast Emergency Response | Joshua Angelo Pechayco</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-one"></div>
+    <header class="site-header">
+      <nav class="nav-wrap container">
+        <a class="brand" href="../index.html">JAP<span>.</span></a
+        ><button
+          class="menu-toggle"
+          aria-label="Open navigation"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links">
+          <a href="../index.html#about">About</a
+          ><a href="../index.html#projects">Projects</a
+          ><a href="../index.html#experience">Experience</a
+          ><a href="../index.html#skills">Skills</a
+          ><a href="../certificates.html">Awards & Certificates</a
+          ><a class="nav-cta" href="../resume.pdf" download>Download CV ↗</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="page-hero container reveal">
+        <a class="back-link" href="../index.html#projects"
+          >← Back to all projects</a
+        >
+        <p class="eyebrow">CAPSTONE PROJECT · IOT & EMERGENCY RESPONSE</p>
+        <h1>An IoT-Based Smart Distress Signal for Fast Emergency Response</h1>
+        <p class="project-role">
+            <strong>My Role:</strong> Leader | Researcher | Full Stack Developer | Techinal Documentation
+        </p>
+        <p class="lead">
+          An IoT-based emergency alert concept intended to help elderly people
+          and persons with disabilities send distress alerts, while helping
+          authorized responders view alert information and location.
+        </p>
+        <div class="meta-row">
+          <span>ESP32</span><span>GPS</span
+          ><span>Firebase Realtime Database</span><span>Node.js</span
+          ><span>HTML / CSS</span><span>Leaflet</span>
+        </div>
+      </section>
+      <div class="container case-layout">
+        <div class="case-main reveal">
+          <section class="case-block">
+            <h2>Project Gallery</h2>
+
+            <div class="project-gallery" data-gallery>
+              <div class="gallery-viewport">
+                <img
+                  class="gallery-slide"
+                  src="../assets/images/iot2.png"
+                  alt="Emergency monitoring map"
+                />
+                <img
+                  class="gallery-slide active"
+                  src="../assets/images/iot.jpg"
+                  alt="IoT Smart Distress System Dashboard"
+                />
+                <img
+                  class="gallery-slide"
+                  src="../assets/images/iot3.png"
+                  alt="Physical IoT emergency device"
+                />
+              </div>
+              <div class="gallery-controls">
+                <button type="button" class="gallery-prev" aria-label="Previous slide">←</button>
+                <span class="gallery-count" aria-live="polite"></span>
+                <button type="button" class="gallery-next" aria-label="Next slide">→</button>
+              </div>
+            </div>
+          </section>
+          <section class="case-block">
+            <h2>Overview</h2>
+            <p>
+              An IoT-based emergency response system designed to help elderly individuals and Persons with Disabilities (PWDs) request immediate assistance through a GPS-enabled wearable device or web-based SOS button. It connects users with Emergency Medical Services (EMS) and barangay responders through real-time alerts and location tracking.
+            </p>
+          </section>
+          <section class="case-block">
+            <h2>Problem and solution</h2>
+            <p>
+              Traditional emergency reporting can be difficult for elderly and PWDs, especially when they cannot make phone calls or communicate their exact location. The system addresses this through one-press SOS alerts that automatically transmit user information and GPS coordinates to emergency responders.
+            </p>
+          </section>
+          <section class="case-block">
+            <h2>Key Features</h2>
+            <ul>
+              <li>
+                <b>One-Press SOS Alert:</b> Send emergency requests through the wearable device or web application.
+              </li>
+              <li>
+                <b>Real-Time GPS Tracking:</b> Display the user's location on an interactive map.
+              </li>
+              <li>
+                <b>Emergency Dashboard:</b> Monitor active alerts and response status.
+              </li>
+              <li>
+                <b>Alert Management:</b> Acknowledge, update, and resolve emergency cases.
+              </li>
+              <li>
+                <b>Automatic Alert Rerouting:</b> Forward unacknowledged alerts to the next available verified responder.
+              </li>
+              <li>
+                <b>User Management:</b> Manage registered users and responder accounts.
+              </li>
+              <li>
+                <b>Alert History and Reports:</b> Review previous incidents and generate reports.
+              </li>
+              <li>
+                <b>Role-Based Access:</b> Provide separate access for EMS administrators, barangay responders, and end users.
+              </li>
+
+            </ul>
+            
+          </section>
+          <section class="case-block">
+            <h2>System workflow</h2>
+            <ul>
+              <li>
+                The ESP32-based device detects a user-triggered distress event.
+              </li>
+              <li>
+                The device obtains location information through a GPS module.
+              </li>
+              <li>
+                Alert details and coordinates are written to Firebase Realtime
+                Database.
+              </li>
+              <li>
+                The monitoring interface retrieves alert records and displays
+                them for authorized users.
+              </li>
+              <li>
+                Responders can review alert status and location information.
+              </li>
+            </ul>
+          </section>
+          <section class="case-block">
+            <h2>Technical implementation</h2>
+            <p>
+              The project used an ESP32, GPS module, Firebase Realtime Database,
+              Node.js, and a web interface with map visualization. Describe only
+              the alert-routing, authentication, and notification features that
+              are present in your final working build.
+            </p>
+          </section>
+
+          <section class="case-block">
+            <h2>High-level architecture</h2>
+            <div class="architecture">
+              <div class="arch-node">
+                <strong>Hardware</strong
+                ><small>ESP32 + GPS module + physical trigger</small>
+              </div>
+              <div class="arch-arrow">↓</div>
+              <div class="arch-node">
+                <strong>Cloud data</strong
+                ><small>Firebase Realtime Database</small>
+              </div>
+              <div class="arch-arrow">↓</div>
+              <div class="arch-node">
+                <strong>Web application</strong
+                ><small>Node.js + HTML / CSS / JavaScript</small>
+              </div>
+              <div class="arch-arrow">↓</div>
+              <div class="arch-node">
+                <strong>Map display</strong
+                ><small>Leaflet + latitude / longitude</small>
+              </div>
+            </div>
+          </section>
+          <section class="case-block">
+            <h2>System areas / modules</h2>
+            <div class="module-grid">
+              <div class="module">Patient distress trigger</div>
+              <div class="module">GPS location capture</div>
+              <div class="module">Firebase alert record</div>
+              <div class="module">Responder monitoring</div>
+              <div class="module">Map-based location view</div>
+              <div class="module">Alert status management</div>
+            </div>
+          </section>
+          <section class="case-block">
+            <h2>What I learned</h2>
+            <p>
+              Strengthened my skills in full-stack development, IoT hardware integration, embedded programming, technical research, documentation, and team leadership.
+            </p>
+          </section>
+        </div>
+        <aside class="case-aside reveal">
+          <section class="case-block">
+            <h2>My Contribution</h2>
+              <ul>
+                <li>Lead the capstone team and coordinated project development.</li>
+                <li>Developed the web application as Full-Stack Developer.</li>
+                <li>Researched IoT hardware components and implementation.</li>
+                <li>Programmed the ESP32 and integrated GPS functionality.</li>
+                <li>Designed and built the physical emergency device.</li>
+                <li>Prepared technical and system documentation.</li>
+              </ul>
+            <h2 style="margin-top: 25px">Technology</h2>
+            <div class="tag-list">
+              <span>ESP32</span>
+              <span>GPS Module</span>
+              <span>C++</span>
+              <span>Firebase Realtime Database</span>
+              <span>Node.js</span>
+              <span>HTML / CSS</span>
+              <span>JavaScript</span>
+              <span>Leaflet</span>
+            </div>
+          </section>
+        </aside>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="brand" href="../index.html">JAP<span>.</span></a>
+        <p>© 2026 Joshua Angelo Pechayco</p>
+        <a href="../index.html#projects">All projects ↑</a>
+      </div>
+    </footer>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>
